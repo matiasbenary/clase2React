@@ -1,0 +1,9 @@
+.card{
+  background-color: #fadc3b;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.card--important{
+  background-color: red;
+}

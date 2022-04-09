@@ -1,27 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-import Pepito from './Components/Card';
-import Agus from './Card';
-import { Titulo, suma } from './Components/Card';
+import Card from './Components/Card';
 
 const App = () => {
-  const nombre = 'Matias';
-  const numeros = [12, 12, 3, 54, 6, 'Matias'];
-  const edad = suma(7, 20);
   return (
-    <div className="App">
-      <Titulo></Titulo>
-      <Agus></Agus>
-      <Pepito></Pepito>
-      <Pepito></Pepito>
-      <Pepito />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="title">
-          Hola me llamo {numeros} y tengo {suma(edad, 10)}
-        </p>
-        <p className="titulo">Hola soy otro titulo</p>
-      </header>
+    <div>
+      <Card
+        title="Novedades"
+        detail="HOla Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        reprehenderit id necessitatibus mollitia libero, repellendus aliquam
+        facere, illum expedita obcaecati tempora autem? A aliquid tempora
+        blanditiis sequi commodi deserunt eveniet voluptate, id delectus
+        laudantium nobis necessitatibus, mollitia impedit est earum veritatis quia
+        beatae repellat optio quas accusamus nesciunt ipsam autem?"
+        redirectTo="https://www.google.com.ar/"
+        like={500}
+      ></Card>
+      <Card
+        title="Prioridades"
+        detail="HOla Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        m expedita obcaecati tempora autem? A aliquid tempora
+        blanditiis sequi commodi deserunt eveniet voluptate, id delectus
+        laudantium nobis necessitatibus, mollitia impedit est earum veritatis quia
+        beatae repellat optio quas accusamus nesciunt ipsam autem?"
+        redirectTo="https://www.youtube.com.ar/"
+        like={200}
+        isImportant
+      ></Card>
     </div>
   );
 };
